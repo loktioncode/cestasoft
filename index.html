@@ -38,6 +38,8 @@
   <script src="vendor/lib/jquery/jquery.min.js"></script>
   <script src="vendor/lib/wow/wow.min.js"></script>
 
+ 
+
 
 
 </head>
@@ -47,6 +49,12 @@
   <!-- Header -->
   <header id="head"  >
 
+      <script>
+          function logo_url(){
+            location.replace('index.html');
+          }
+      </script>
+
       <!-- Header 
       <video class="overlay "playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" >
           <source src="video.mp4" type="video/mp4">
@@ -54,23 +62,34 @@
        -->
         <div  class="overlay">
           
-          <div id="logo">
-            
+          <div id="myDiv" onClick="logo_url()">
               <img src="vendor/img/logo.png" alt="logo" width="200px" style="margin-top: 20px;" >
-            
-              
           </div>
-          <div class="open " > 
-            <span class="cls"></span> 
-            <span>
-              <ul class="sub-menu ">
-                <li> <a href="#" style="padding-top: 30px;">Home</a> </li>
-                <li> <a href="#" style="padding-top: 70px;">About</a> </li>
-                <li> <a href="#" style="padding-top: 120px;">Contact Us</a> </li>
+          
+         
+        
+              
+        <div class="open " > 
+          <span class="cls"></span> 
+          <span>
+            <div  class="sub-menu ">
+              <ul>
+                <li> <a href="index.html" >Home</a> </li>
+                <hr>
+                <li style="margin-top: 20px;"> <a href="services.html" >Services</a> </li>
               </ul>
-            </span> 
-            <span class="cls"></span> 
-        </div>
+            </div>
+          </span> 
+          <span class="cls"></span> 
+      </div>
+
+            <div id="text_slide">
+                <h1 class="item-1">Experience Innovation</h1>
+
+                <h1 class="item-2"> Clean Codes </h1>
+                
+                <h1 class="item-3">Automation Testing </h1>
+            </div>
 
         </div>
     
@@ -191,28 +210,46 @@
           <div class="wrapper">
                 <div class="parent" onclick="">
                   <div class="child bg-one">
-                    <a href="#">Los Angeles</a>
+                      <div id="service_block">
+                          <!--<i class="fa fa-eye text_fade"></i> --> 
+                          <h3 class="text_fade">Certified Consultants</h3>
+   
+                      </div>
+                      <a href="services.html"><p>Hey this is how we work </p></a>
                   </div>
                 </div>
               
                 <div class="parent right" onclick="">
                   <div class="child bg-two">
-                    <a href="#">London</a>
+                      <div id="service_block">
+                          <!--<i class="fa fa-eye text_fade"></i> --> 
+                          <h3 class="text_fade">Quality Assurance</h3>
+   
+                      </div>
+                      <a href="services.html"><p>Hey this is how we work </p></a>
                   </div>
                 </div>
               
                 <div class="parent" onclick="">
                   <div class="child bg-three">
-                    <a href="#">New York</a>
+                      <div id="service_block">
+                          <!--<i class="fa fa-eye text_fade"></i> --> 
+                          <h3 class="text_fade">Software Product Design</h3>
+   
+                      </div>
+                      <a href="services.html"><p>Hey this is how we work </p></a>
                   </div>
                 </div>
               
                 <div class="parent right" onclick="">
                   
                   <div class="child  bg-four">
-                      <h3 class="text_fade">tttt</h3>
-                    <a href="#">Hollywood</a>
-                    
+                    <div id="service_block">
+                        <!--<i class="fa fa-eye text_fade"></i> --> 
+                        <h3 class="text_fade">Training and Leadership</h3>
+ 
+                    </div>
+                    <a href="services.html"><p>Hey this is how we work </p></a>
                   </div>
                 </div>
               
@@ -222,7 +259,7 @@
         </div>
       </div>
     </section>
-  
+   <!----> 
         
   <!--==========================
     Testimonials Section
@@ -237,58 +274,67 @@
               <div class="container">
                   <div class="section-title text-center">
               
-                      <h2>Client Feedback </h2>
+                      <h2 style="padding-top: 30px;">Client Feedback </h2>
               
                     </div>
                 <div class="row justify-content-center">
           
-                  <div class="col-md-8">
+                  <div class="col-md-8  top-top1" >
           
-                    <div class="testimonials-content">
-                      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <div class="testimonials-content ">
+ 
+                            <div class="top-top ">
           
-                        <div class="carousel-inner" role="listbox">
-          
-                          <div class=" active">
-                            <div class="top-top">
-          
-                              <h2>Our Users Speack volumes us</h2>
+                              <h2>Our Users Speak volumes us</h2>
                               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
                                 specimen book. It has survived not only five centuries.</p>
                               <h4>Kimberly Tran<span>manager</span></h4>
           
                             </div>
-                          </div>
-          
-                          <div class="carousel-item ">
-                            <div class="top-top">
-          
-                              <h2>Our Users Speack volumes us</h2>
-                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                                specimen book. It has survived not only five centuries.</p>
-                              <h4>Henderson<span>manager</span></h4>
-          
-                            </div>
-                          </div>
-          
-                          <div class="carousel-item ">
-                            <div class="top-top">
-          
-                              <h2>Our Users Speack volumes us</h2>
-                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                                specimen book. It has survived not only five centuries.</p>
-                              <h4>David Spark<span>manager</span></h4>
-          
-                            </div>
-                          </div>
-          
+                            
                         </div>
-          
-                      
-          
-                      </div>
-                    </div>
+                    
+
+                    
                   </div>
+
+                  <div class="col-md-8  top-top2" style="margin-top:-300px">
+          
+                      <div class="testimonials-content ">
+
+                          <div class="top-top ">
+        
+                            <h2>1</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                              specimen book. It has survived not only five centuries.</p>
+                            <h4>Kimberly Tran<span>manager</span></h4>
+        
+                          </div>
+                          
+                      </div>
+                  
+
+                  
+                </div>
+
+                <div class="col-md-8  top-top3" style="margin-top:-300px">
+          
+                    <div class="testimonials-content ">
+
+                        <div class="top-top ">
+      
+                          <h2>3</h2>
+                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries.</p>
+                          <h4>Kimberly Tran<span>manager</span></h4>
+      
+                        </div>
+                        
+                    </div>
+                
+
+                
+              </div>
           
                 </div>
               </div>
@@ -396,12 +442,12 @@
                     </div>
 
                 <div class="container">
-                    <div class="row">
+                    <div class="row" style="padding-top: 50px; padding-left: 50px;">
               
                       <div class="col-md-6 col-lg-4">
                         <div class="feature-block">
               
-                          <img src="vendor/img/svg/cloud.svg" alt="img" class="img-fluid">
+                          <img src="vendor/img/part1.png" alt="img" class="img-fluid" >
                           <h4>Org 1</h4>
               
                         </div>
@@ -410,7 +456,7 @@
                       <div class="col-md-6 col-lg-4">
                         <div class="feature-block">
               
-                          <img src="vendor/img/svg/planet.svg" alt="img" class="img-fluid">
+                          <img src="vendor/img/part2.png" alt="img" class="img-fluid">
                           <h4>Org 2</h4>
                         
               
@@ -420,12 +466,14 @@
                       <div class="col-md-6 col-lg-4">
                         <div class="feature-block">
               
-                          <img src="vendor/img/svg/cloud-computing.svg" alt="img" class="img-fluid">
+                          <img src="vendor/img/part3.png" alt="img" >
                           <h4>Org 3</h4>
                        
               
                         </div>
                       </div>
+
+                   
               
                     </div>
                   </div>
@@ -460,9 +508,9 @@
             <div class="list-menu">
   
               <ul >
-                <li> <a href="#" style="padding-top: 30px;">Home</a> </li>
-                <li> <a href="#" style="padding-top: 70px;">About</a> </li>
-                <li> <a href="#" style="padding-top: 120px;">Contact Us</a> </li>
+                <li> <a href="#" >Home</a> </li>
+                <li> <a href="#" >About</a> </li>
+                <li> <a href="#">Contact Us</a> </li>
               </ul>
   
             </div>

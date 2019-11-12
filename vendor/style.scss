@@ -7,15 +7,7 @@ nav {
   z-index: 999;
 }
 
-#logo{
-  float: left;
-  height: 90px;
-  letter-spacing: 0.2em;
-  padding: 10px;
-  width: 280px;
-  margin-left: 40px;
-  margin-top: 6px;
-}
+
 
  
  #banner_text{
@@ -74,7 +66,6 @@ footer .btn:hover {
   position: relative;
   float: left;
   cursor: pointer;
- 
 
 }
 
@@ -90,16 +81,13 @@ footer .btn:hover {
 }
 
 /* Several different images */
-.bg-one {background-image: url(https://media.timeout.com/images/101602611/image.jpg);}
-.bg-two {background-image: url(http://s1.it.atcdn.net/wp-content/uploads/2015/08/2-London.jpg);}
-.bg-three {background-image: url(https://media.timeout.com/images/101484105/image.jpg);}
+.bg-one {background: url('./img/p1.jpg');}
+.bg-two {background-image:  url('./img/p2.jpg');}
+.bg-three {background-image: url('./img/p3.jpg');}
 
 .bg-four {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Hollywood_Sign.jpg/1280px-Hollywood_Sign.jpg);
+  background-image: url('./img/p4.jpg');;
   text-align: center;
-  padding-top: 120px;
-  
-
 }
 
 
@@ -147,12 +135,36 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(255, 69, 0,0.75);
+  background-color: rgba(0, 0, 0,0.75);    //rgba(255, 69, 0,0.75);
   
 }
 
 .bg-four:hover .text_fade{
   opacity:0;
+}
+
+
+.bg-three:hover .text_fade{
+  opacity:0;
+}
+
+
+.bg-two:hover .text_fade{
+  opacity:0;
+}
+
+
+.bg-one:hover .text_fade{
+  opacity:0;
+}
+
+/* styling for services block */
+.text_fade{
+  color: rgba(255, 255, 255);
+  font-size: 25px;
+  padding-top: 0px;
+  font-weight: 400;
+  background-color: rgba(255, 69, 0,0.55);;
 }
 
 
@@ -264,4 +276,13 @@ p {
   100% {
     transform: translateX(0);
   }
+}
+
+#service_block{
+  padding-top: 100px;
+}
+
+.text_fade{
+  font-size: 40px !important;
+  float: none !important;
 }
