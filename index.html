@@ -13,9 +13,9 @@
 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
-<link href="vendor/css/business-frontpage.css" rel="stylesheet">
-<link href="vendor/style.scss" rel="stylesheet">
-<link href="vendor/css/style.css" rel="stylesheet">
+
+<link href="vendor/css/style.scss" rel="stylesheet">
+
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -46,6 +46,18 @@
 
 <body style="padding-top: 0px;">
 
+  <div style="height: 4vh;" id="top_liner">
+    
+        <div style="float: right; margin-right: 100px; padding: 5px;">
+            <span class="" style=" color:rgb(255, 255, 255); font-size: 16px; padding-right: 20px;"> info@cestasoft.co.za </span>
+            <i class="fa fa-facebook " style="  color:rgb(255, 68, 0); font-size: 16px;"></i>        
+            <i class="fa fa-linkedin" style="color:rgb(255, 68, 0); font-size: 16px; padding-left: 30px;" ></i>
+            <i class="fa fa-twitter" style="color:rgb(255, 68, 0); font-size: 16px; padding-left: 30px;" ></i>
+        </div>
+      
+    
+  </div>
+
   <!-- Header -->
   <header id="head"  >
 
@@ -63,28 +75,34 @@
         <div  class="overlay">
           
 
-        <img src="vendor/img/logo.png" alt="logo" width="200px" style="margin-top: 20px;"  onClick="logo_url()">
+        <img src="vendor/img/logo.png" alt="logo" width="200px"  onClick="logo_url()">
  
               
-        <div class="open " > 
+        <div class="open " style="margin-top:20px;" > 
           <span class="cls"></span> 
           <span>
-            <div  class="sub-menu ">
-              <ul>
-                <li> <a href="services.html" >Services</a> </li>
-                
-              </ul>
-            </div>
+              <div class="Menu sub-menu ">
+                  <ul class="Menu-list" data-offset="10">
+                    <li class="Menu-list-item" >
+                      Home</li>
+                    <li>
+                      About</li>
+                    <li >
+                      Work</li>
+                    <li >
+                      Contact</li>
+                  </ul>
+                </div>
           </span> 
           <span class="cls"></span> 
       </div>
 
             <div id="text_slide">
-                <h1 class="item-1">Experience Innovation</h1>
+                <h1 class="item-1" style="margin-top: 140px;">Innovative IT Services & Solutions!</h1>
 
-                <h1 class="item-2"> Clean Codes </h1>
+                <h1 class="item-2" style="margin-top: 0px;"> Highly skilled and experienced Consultants</h1>
                 
-                <h1 class="item-3">Automation Testing </h1>
+                <h3 class="item-3" style="margin-top: -20px;">Custom web and mobile app development </h3>
             </div>
 
         </div>
@@ -107,7 +125,7 @@
             <div class="feature-block">
               <img src="vendor/img/svg/paint-palette.svg" alt="img" class="img-fluid">
               <h4 style="font-size:16px;">creative design</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              <p>Our Creative team focuses on understanding our clients and their brands to the core, and then applies this knowledge to each project, ensuring that the right message is communicated to the right target audience.</p>
             </div>
           </div>
   
@@ -115,7 +133,11 @@
             <div class="feature-block">
               <img src="vendor/img/svg/vector.svg" alt="img" class="img-fluid">
               <h4 style="font-size:16px;">Constultants</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              <p>Microsoft, IBM, Oracle & SAP Certified Consultants and 
+              Experienced Project Managers from various industry domains. Specialized and experienced BI Consultants</p>
+              <p>
+               
+              </p>
             </div>
           </div>
   
@@ -123,7 +145,7 @@
             <div class="feature-block">
               <img src="vendor/img/svg/design-tool.svg" alt="img" class="img-fluid">
               <h4 style="font-size:16px;">Software Testing</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              <p>End to End Quality Strategies, Test Maturity Assessments, Test Optimization, TCoE setup and General Test Management. Performance testing / engineering in methodologies such as SDLC and Agile.</p>
             </div>
           </div>
 
@@ -131,7 +153,7 @@
             <div class="feature-block">
               <img src="vendor/img/svg/code.svg" alt="img" class="img-fluid">
               <h4 style="font-size:16px;">clean codes</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              <p>Application development services; Development languages include PHP, HTML5, JavaScript, Ajax, XML, Angular.js, node.js and many more; Databases include MySQL, PostgreSQL & Mongo</p>
             </div>
           </div>
   
@@ -208,10 +230,15 @@
                   <div class="child bg-one">
                       <div id="service_block">
                           <!--<i class="fa fa-eye text_fade"></i> --> 
-                          <h3 class="text_fade">Certified Consultants</h3>
+                          <h3 class="text_fade">Professionals Consultancy</h3>
    
                       </div>
-                      <a href="services.html"><p>Hey this is how we work </p></a>
+                      <a style=" margin-top: 100px;"  id="service_link" href="services.html">
+                        <p>Domain and testing expertise with CoE</p>
+                        <p>Expertise in end to end software development life cycle</p>
+                        <p>Architecture and CI/CD Implementation</p>
+                      </a>
+                        
                   </div>
                 </div>
               
@@ -222,7 +249,12 @@
                           <h3 class="text_fade">Quality Assurance</h3>
    
                       </div>
-                      <a href="services.html"><p>Hey this is how we work </p></a>
+                      <a  id="service_link" href="services.html">
+                          <p>Performance testing (AGILE & SDLC)</p>
+                          <p>Cross browser, Device, Omni-Channel and IoT Testing</p>
+                          <p>Manual and automated functional testing </p>
+                          <p>Web service, API and Database testing</p>
+                        </a>
                   </div>
                 </div>
               
@@ -233,7 +265,12 @@
                           <h3 class="text_fade">Software Product Design</h3>
    
                       </div>
-                      <a href="services.html"><p>Hey this is how we work </p></a>
+                      <a  id="service_link" href="services.html">
+                          <p>Native and Hybrid App Development</p>
+                          <p>SAAS Products Design</p>
+                          <p>Web Application Support & Maintenance</p>
+                          <p>Systems Integrations</p>
+                        </a>
                   </div>
                 </div>
               
@@ -242,10 +279,15 @@
                   <div class="child  bg-four">
                     <div id="service_block">
                         <!--<i class="fa fa-eye text_fade"></i> --> 
-                        <h3 class="text_fade">Training and Leadership</h3>
+                        <h3 class="text_fade">Leadership & Training</h3>
  
                     </div>
-                    <a href="services.html"><p>Hey this is how we work </p></a>
+                    <a  id="service_link" href="services.html">
+                        <p>Graduate Training</p>
+                        <p>Software Testing Training</p>
+                        <p>Scrum Implementation and Team Coaching Training</p>
+                        <p>Waterfall and Agile,Project Tracking & Reporting Training</p>
+                      </a>
                   </div>
                 </div>
               
@@ -422,14 +464,14 @@
   
     
      <!--==========================
-    Newsletter Section
+    Patners Section
   ============================-->
   <section id="newsletter" class="newsletter text-center wow fadeInUp">
       <div class="overlay padd-section">
         <div class="container">
   
           <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-8">
+            <div class="col-md-12 col-lg-12">
                 <div class="container">
                     <div class="section-title text-center">
               
@@ -438,39 +480,39 @@
                     </div>
 
                 <div class="container">
-                    <div class="row" style="padding-top: 50px; padding-left: 50px;">
+                    <div class="row" style="padding-top: 50px; ">
               
-                      <div class="col-md-6 col-lg-4">
+                      <div class="col-md-6 col-lg-3">
                         <div class="feature-block">
-              
-                          <img src="vendor/img/part1.png" alt="img" class="img-fluid" >
-                          <h4>Org 1</h4>
-              
+                          <img src="vendor/img/part1.png" alt="img" class="partner_logo" >
                         </div>
                       </div>
               
-                      <div class="col-md-6 col-lg-4">
+                      <div class="col-md-6 col-lg-3">
                         <div class="feature-block">
               
-                          <img src="vendor/img/part2.png" alt="img" class="img-fluid">
-                          <h4>Org 2</h4>
-                        
-              
+                          <img src="vendor/img/part2.png" alt="img" class="partner_logo">
+
                         </div>
                       </div>
               
-                      <div class="col-md-6 col-lg-4">
+                      <div class="col-md-6 col-lg-3">
                         <div class="feature-block">
               
-                          <img src="vendor/img/part3.png" alt="img" >
-                          <h4>Org 3</h4>
-                       
-              
+                          <img src="vendor/img/part3.jpg" alt="img" >
+      
                         </div>
                       </div>
 
-                   
-              
+                      <div class="col-md-6 col-lg-3">
+                          <div class="feature-block">
+                
+                            <img src="vendor/img/part4.gif" alt="img" class="partner_logo" >
+        
+                          </div>
+                      </div>
+
+
                     </div>
                   </div>
               
@@ -485,44 +527,37 @@
     <!--==========================
       Footer
     ============================-->
-    <footer class="footer">
+    <footer >
       <div class="container">
         <div class="row footer_row">
   
           <div class="col-md-12 col-lg-4">
             <div class="footer-logo">
             
-              <img src="vendor/img/logo.png" alt="logo" width="200px" style="margin-top: 20px;" >
+              <img src="vendor/img/logo.png" alt="logo" width="200px" style="margin-top: 20px; font-weight: 500;" >
             
-              <p style="margin-top: 10px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
+              <p style="margin-top: 10px;">CestaSoft Solutions proposes a managed services model to support your requirements. With your acceptance, we transition from a resource supply model based predominantly on staﬀ augmentation to one that includes managed services.</p>
   
             </div>
           </div>
   
-  
-          <div class="col-sm-6 col-md-3 col-lg-2">
+          
+          <div class="col-md-12 col-lg-4">
             <div class="list-menu">
-  
-              <ul >
-                <li> <a href="#" >Home</a> </li>
-                <li> <a href="#" >About</a> </li>
-                <li> <a href="#">Contact Us</a> </li>
-              </ul>
-  
-            </div>
-          </div>
-
-          
-          <div class="col-sm-6 col-md-3 col-lg-2">
-            <div class="list-menu">
-  
-          
-  
+                  <p style="padding-top: 30px; font-size: 20px; margin-bottom: 0px;">  <i class="fa fa-phone-square"  style=" color:rgb(255, 69, 0, 0.8);"> </i> + 27 (0) 11 575 1765</p>
+                  <p style="font-size: 20px; margin-bottom: 0px;">  <i class="fa  fa-map-marker " style=" color:rgb(255, 69, 0, 0.8);"></i>  Address  
+                    <Address>Ground Floor,
+                      Wrigley Field Building,
+                      The Campus,
+                      Sloane Street, Bryanston
+                      Johannesburg 2194
+                    </Address></p>
+                 
             </div>
           </div>
   
           
-          <div class="col-sm-6 col-md-3 col-lg-2">
+          <div class="col-md-12 col-lg-4">
               <h4 style="padding-bottom:10px; padding-top: 15px;">Let's Chat!</h4>
               <form>
                   <fieldset class="form-group">
@@ -532,7 +567,7 @@
                       <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
                   </fieldset>
                   <fieldset class="form-group text-xs-right">
-                      <button type="submit" class="btn btn-warning btn-md">Send</button>
+                      <button type="submit" class="btn btn-md">Send</button>
                   </fieldset>
               </form>
           </div>
