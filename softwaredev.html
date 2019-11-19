@@ -12,10 +12,9 @@
 <!-- Bootstrap core CSS -->
 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Custom styles for this template -->
 
 <link href="vendor/css/style.scss" rel="stylesheet">
-
+<link href="vendor/css/dev.css" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -36,113 +35,189 @@
   <link href="vendor/lib/modal-video/css/modal-video.min.css" rel="stylesheet">
 
   <script src="vendor/lib/jquery/jquery.min.js"></script>
-  <script src="vendor/lib/wow/wow.min.js"></script>
-
- 
-
 
 
 </head>
 
 <body style="padding-top: 0px;">
+    <div class="preloader"></div>
+    <script>
+       function logo_url(){
+          location.replace('index.html');
+        }
 
-  <div style="height: 4vh;" id="top_liner">
+        function fb(){
+          window.open("https://www.facebook.com/cestasoft/", "_blank"); 
+        }
+        
+        function twit(){
+          window.open("https://twitter.com/CestaSoft", "_blank"); 
+        }
+        
+        function linkd(){
+          window.open("https://www.linkedin.com/company/cestasoft-solutions/", "_blank"); 
+        }
+        
+        function about(){
+          location.replace('#about-us');
+        }
+        
+        function service(){
+          location.replace('#blog');
+        }
+        
+        function team(){
+          location.replace('#team');
+        }
+        
+        function contact(){
+          location.replace('#contact');
+        }
+            
+        
+        </script>
+
+ <div style="height: 6vh; position: absolute; float: right; margin-left: 800px; padding: 5px;" id="top_liner">
     
-        <div style="float: right; margin-right: 100px; padding: 5px;">
-            <span class="" style=" color:rgb(255, 255, 255); font-size: 16px; padding-right: 20px;"> info@cestasoft.co.za </span>
-            <i class="fa fa-facebook " style="  color:rgb(255, 68, 0); font-size: 16px;"></i>        
-            <i class="fa fa-linkedin" style="color:rgb(255, 68, 0); font-size: 16px; padding-left: 30px;" ></i>
-            <i class="fa fa-twitter" style="color:rgb(255, 68, 0); font-size: 16px; padding-left: 30px;" ></i>
+        <div >
+          <span class="" style=" color:rgba(255, 255, 255, 0.9); font-size: 13px; padding-right: 20px;">reach us@:  + 27 (0) 11 575 1765 </span>
+            <span class="" style=" color:rgba(255, 255, 255, 0.9); font-size: 13px; padding-right: 20px;">email: info@cestasoft.co.za  </span>
+            <i class="fa fa-facebook " style="  color:rgb(255, 68, 0); font-size: 13px;" onClick="fb()" ></i>        
+            <i class="fa fa-linkedin" style="color:rgb(255, 68, 0); font-size: 13px; padding-left: 30px;" onClick="linkd()"></i>
+            <i class="fa fa-twitter" style="color:rgb(255, 68, 0); font-size: 13px; padding-left: 30px;" onClick="twit()" ></i>
         </div>
       
     
   </div>
 
-  <!-- Header -->
-  <header id="head_page"  >
+<!-- Header -->
+<header id="test_page"  >
 
-      <!-- Header 
-      <video class="overlay "playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" >
-          <source src="video.mp4" type="video/mp4">
-      </video>
-       -->
-        <div  class="overlay">
+  <!-- Header 
+  <video class="overlay "playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" >
+      <source src="video.mp4" type="video/mp4">
+  </video>
+   -->
+    <div  class="overlay">
 
-            
-          <img src="vendor/img/logo.png" alt="logo" width="200px" style="margin-top: 10px;" >
-  
-          <div class="open" style="margin-top: 30px;"> 
+        
+        <img src="vendor/img/logo.png" alt="logo" width="200px"  onClick="logo_url()" style="margin-top: 10px;" >
+        <p style="padding-left: 80px; font-size: 10px; margin-top: -16.5px ; color: rgba(228, 96, 48, 0.904); font-weight: 600;"> EXPERIENCE INNOVATION </p>
+
+        <div class="open" style="margin-top: 30px;"> 
             <span class="cls"></span> 
             <span>
               
-                  <div class="Menu sub-menu ">
-                      <ul class="Menu-list" data-offset="10">
-                        <li class="Menu-list-item" >
-                          Home</li>
-                        <li>
-                          About</li>
-                        <li >
-                          Work</li>
-                        <li >
-                          Contact</li>
-                      </ul>
-                    </div>
+                <div class="Menu sub-menu ">
+                    <ul>
+                      <li style="margin-top: 140px;" onClick="logo_url()" >
+                        Home</li>
+                   
+                    </ul>
+                  </div>
                 
              
             </span> 
             <span class="cls"></span> 
         </div>
 
-        <h1 >Software Product Design  </h1>
 
-        </div>
-
-    
+      <h1 class="tracking-in-contract-bck-top">
+              Software Engineering
+      </h1>
 
   </header>
 
-  <!-- Page Content -->
-  <div id="water" class="container ">
-
+  
    <!--==========================
     service Section
   ============================-->
 
-  <section id="service" class="padd-section text-center wow fadeInUp">
+  <section id="cd-timeline" class="cd-container">
       <div class="container">
-        <div class="row">
-  
-          <div class=" col-lg-12">
-            <div class="feature-block">
-
-              <h4 style="font-size:20px;">We Do More than just Develop Software. </h4>
-              <hr >
-              <p>
-                Cesatsoft aims to accelerate the creation of your software products from the stages of conceptualisation through to implementation, reducing time to market helping to make schedules predictable in order to better manage resources, calculate costs, and reduce risks. Our focus is automating all manual processes in a way that improves efficiency and services for our clients. This is done in line with current international standards and best IT practises. 
-                </p>
-            </div>
-          </div>
-  
-          
-        </div>
-      </div>
-    </section>
-
+          <div class="row">
     
-  </div>  <!-- /.container -->
-
+            <div class="wrapper">
   
+                  <div class="parent" onclick="">
+                      <div class="child">
+  
+                          <h1 style="padding-top:50px; color: orangered; font-size: 25px; padding-bottom:6px;"><i class="fa fa-code" aria-hidden="true" style="padding-right: 15px;"></i>Custom Software Development</h1>
+                          <p style="padding:10px;">With Cesatsoft as your technology partner and service provider, we will bring your product to life from mobile application development services ; Development languages include PHP, HTML5, JavaScript, Ajax, XML, Angular.js, node.js and many more; Databases include MySQL, PostgreSQL, Mongo and others;
+                            </p>
+    
+                  </div>
+                  </div>
+                
+                  <div class="parent right" onclick="">
+                      <div class="child">
+  
+                          <h1 style="padding-top:50px; color: orangered; font-size: 25px; padding-bottom:10px;"><i class="fa fa-code" aria-hidden="true" style="padding-right: 15px;"></i>Mobile App Development</h1>
+                          <p style="padding:10px;">Mobile application development for Android & iOS; Mobile technologies include iPhone (Xcode, Swift) and Android (Java)</p>
+    
+                  </div>
+                  </div>
+      
+            </div>
+    
+          </div>
+        </div>
+    </section> <!-- cd-timeline -->
 
-<!--==========================
-    Newsletter Section
+  <!-- Page Content -->
+  <div>
+
+         <!--==========================
+  Tools Section
   ============================-->
   <section id="newsletter" class="newsletter text-center wow fadeInUp">
       <div class="overlay padd-section">
         <div class="container">
   
           <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-8">
+            <div class="col-md-12 col-lg-12">
+                <div class="container">
+                    <div class="tools text-center">
+              
+                      <h2>some tools we use...</h2>
+              
+                    </div>
+
+                <div class="container">
+                    <div class="row" style="padding-top: 50px; ">
+              
+                      <div class="col-md-6 col-lg-3">
+                        <div class="feature-block">
+                          <img src="vendor/img/dev/nodejs.svg" alt="img" class="partner_logo" >
+                        </div>
+                      </div>
+              
+                      <div class="col-md-6 col-lg-3">
+                        <div class="feature-block">
+              
+                          <img src="vendor/img/dev/laravel.svg" alt="img" class="partner_logo">
+
+                        </div>
+                      </div>
+              
+                      <div class="col-md-6 col-lg-3">
+                        <div class="feature-block">
+              
+                          <img src="vendor/img/dev/react.svg" alt="img" width="80px" height="80px"  >
+      
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-lg-3">
+                          <div class="feature-block">
                 
+                            <img src="vendor/img/dev/python.svg" alt="img" class="partner_logo" >
+        
+                          </div>
+                      </div>
+
+                    </div>
+                  </div>
               
   
             </div>
@@ -151,51 +226,43 @@
         </div>
       </div>
     </section>
-  
-  
 
-  
+
+    
     <!--==========================
       Footer
     ============================-->
-    <footer class="footer">
+    <footer id="contact" >
       <div class="container">
         <div class="row footer_row">
   
           <div class="col-md-12 col-lg-4">
             <div class="footer-logo">
             
-              <img src="vendor/img/logo.png" alt="logo" width="200px" style="margin-top: 20px;" >
+              <img src="vendor/img/logo.png" alt="logo" width="200px" style="margin-top: 20px; font-weight: 500;" onClick="logo_url()">
             
-              <p style="margin-top: 10px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
+              <p style="margin-top: 10px;">CestaSoft Solutions proposes a managed services model to support your requirements. With your acceptance, we transition from a resource supply model based predominantly on staﬀ augmentation to one that includes managed services.</p>
   
             </div>
           </div>
   
-  
-          <div class="col-sm-6 col-md-3 col-lg-2">
+          
+          <div class="col-md-12 col-lg-4">
             <div class="list-menu">
-  
-              <ul >
-                <li> <a href="#" style="padding-top: 30px;">Home</a> </li>
-                <li> <a href="#" style="padding-top: 70px;">About</a> </li>
-                <li> <a href="#" style="padding-top: 120px;">Contact Us</a> </li>
-              </ul>
-  
-            </div>
-          </div>
-
-          
-          <div class="col-sm-6 col-md-3 col-lg-2">
-            <div class="list-menu">
-  
-          
-  
+                  <p style="padding-top: 30px; font-size: 20px; margin-bottom: 0px;">  <i class="fa fa-phone-square"  style=" color:rgb(255, 69, 0, 0.8);"> </i> + 27 (0) 11 575 1765</p>
+                  <p style="font-size: 20px; margin-bottom: 0px;">  <i class="fa  fa-map-marker " style=" color:rgb(255, 69, 0, 0.8);"></i>  Address  
+                    <Address>Ground Floor,
+                      Wrigley Field Building,
+                      The Campus,
+                      Sloane Street, Bryanston
+                      Johannesburg 2194
+                    </Address></p>
+                 
             </div>
           </div>
   
           
-          <div class="col-sm-6 col-md-3 col-lg-2">
+          <div class="col-md-12 col-lg-4">
               <h4 style="padding-bottom:10px; padding-top: 15px;">Let's Chat!</h4>
               <form>
                   <fieldset class="form-group">
@@ -205,33 +272,32 @@
                       <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
                   </fieldset>
                   <fieldset class="form-group text-xs-right">
-                      <button type="submit" class="btn btn-warning btn-md">Send</button>
+                      <button type="submit" class="btn btn-md">Send</button>
                   </fieldset>
               </form>
           </div>
-      
-  
-       
-  
         </div>
       </div>
-
-  
     </footer>
-  
-
-  
   
 
 
   <!-- JavaScript Libraries -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="vendor/lib/jquery/jquery-migrate.min.js"></script>
   <script src="vendor/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Template Main Javascript File -->
+ <script src="vendor/js/main.js"></script>
+
+ <script>
+    $(window).load(function() {
+    $('.preloader').fadeOut('slow');
+ });
+  
+  
+  </script>
  
 
-  <!-- Template Main Javascript File -->
-  <script src="vendor/js/main.js"></script>
+ 
   <script>
       $(document).ready(function() {
   $(document).delegate('.open', 'click', function(event){
@@ -248,7 +314,6 @@
 });
   
   </script>
-
 </body>
 
 </html>

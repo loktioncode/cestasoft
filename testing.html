@@ -14,6 +14,7 @@
 
 
 <link href="vendor/css/style.scss" rel="stylesheet">
+<link href="vendor/css/test.css" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -34,88 +35,193 @@
   <link href="vendor/lib/modal-video/css/modal-video.min.css" rel="stylesheet">
 
   <script src="vendor/lib/jquery/jquery.min.js"></script>
-  <script src="vendor/lib/wow/wow.min.js"></script>
-
 
 
 </head>
 
 <body style="padding-top: 0px;">
+    <div class="preloader"></div>
+    <script>
+        function logo_url(){
+          location.replace('index.html');
+        }
 
-  <!-- Header -->
-  <header id="head_page"  >
+        function twit(){
+  window.open("https://twitter.com/CestaSoft", "_blank"); 
+}
 
-      <!-- Header 
-      <video class="overlay "playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" >
-          <source src="video.mp4" type="video/mp4">
-      </video>
-       -->
-        <div  class="overlay">
+function linkd(){
+  window.open("https://www.linkedin.com/company/cestasoft-solutions/", "_blank"); 
+}
 
-            
-          <img src="vendor/img/logo.png" alt="logo" width="200px" style="margin-top: 10px;" >
+function about(){
+  location.replace('#about-us');
+}
+
+function service(){
+  location.replace('#blog');
+}
+
+function team(){
+  location.replace('#team');
+}
+
+function contact(){
+  location.replace('#contact');
+}
+    
+    </script>
+
+<div style="height: 6vh; position: absolute; float: right; margin-left: 800px; padding: 5px;" id="top_liner">
+    
+    <div >
+      <span class="" style=" color:rgba(255, 255, 255, 0.9); font-size: 13px; padding-right: 20px;">reach us@:  + 27 (0) 11 575 1765 </span>
+        <span class="" style=" color:rgba(255, 255, 255, 0.9); font-size: 13px; padding-right: 20px;">email: info@cestasoft.co.za  </span>
+        <i class="fa fa-facebook " style="  color:rgb(255, 68, 0); font-size: 13px;" onClick="fb()" ></i>        
+        <i class="fa fa-linkedin" style="color:rgb(255, 68, 0); font-size: 13px; padding-left: 30px;" onClick="linkd()"></i>
+        <i class="fa fa-twitter" style="color:rgb(255, 68, 0); font-size: 13px; padding-left: 30px;" onClick="twit()" ></i>
+    </div>
   
-          <div class="open" style="margin-top: 30px;"> 
+
+</div>
+<!-- Header -->
+<header id="test_page"  >
+  
+    <script>
+        function logo_url(){
+          location.replace('index.html');
+        }
+    </script>
+
+  <!-- Header 
+  <video class="overlay "playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" >
+      <source src="video.mp4" type="video/mp4">
+  </video>
+   -->
+    <div  class="overlay">
+
+        
+        <img src="vendor/img/logo.png" alt="logo" width="200px"  onClick="logo_url()" style="margin-top: 10px;" >
+        <p style="padding-left: 80px; font-size: 10px; margin-top: -16.5px ; color: rgba(228, 96, 48, 0.904); font-weight: 600;"> EXPERIENCE INNOVATION </p>
+
+
+        <div class="open" style="margin-top: 30px;"> 
             <span class="cls"></span> 
             <span>
-              <ul class="sub-menu ">
-                <li> <a href="#" style="padding-top: 30px;">Home</a> </li>
-                <li> <a href="#" style="padding-top: 70px;">About</a> </li>
-                <li> <a href="services.html" style="padding-top: 120px;">Services</a> </li>
-                <li> <a href="services.html" style="padding-top: 120px;">Contact Us</a> </li>
-              </ul>
+              
+                <div class="Menu sub-menu ">
+                    <ul>
+                      <li style="margin-top: 140px;" onClick="logo_url()" >
+                        Home</li>
+                   
+                    </ul>
+                  </div>
+                
+             
             </span> 
             <span class="cls"></span> 
         </div>
 
-        <h1> SERVICE 1</h1>
 
-        </div>
-
-    
+      <h1 class="tracking-in-contract-bck-top">
+              Software Quality Analysis
+      </h1>
 
   </header>
 
-  <!-- Page Content -->
-  <div id="water" class="container ">
-
+  
    <!--==========================
     service Section
   ============================-->
 
-  <section id="service" class="padd-section text-center wow fadeInUp">
+  <section id="cd-timeline" class="cd-container">
+
       <div class="container">
-        <div class="row">
-  
-          <div class=" col-lg-12">
-            <div class="feature-block">
-              <img src="vendor/img/svg/paint-palette.svg" alt="img" class="img-fluid">
-              <h4 style="font-size:16px;">creative design</h4>
-              <p>
-                CestaSoft Solutions proposes a managed services model to support your requirements. With your acceptance, we transition from a resource supply model based predominantly on staﬀ augmentation to one that includes managed services.</p>
-            </div>
-          </div>
-  
-          
-        </div>
-      </div>
-    </section>
-
+          <div class="row">
     
-  </div>  <!-- /.container -->
-
+            <div class="wrapper">
   
+                  <div class="parent" onclick="">
+                      <div class="child">
+  
+                          <h1 style="padding-top:50px; color: orangered; font-size: 25px; padding-bottom:6px;">Functional Testing</h1>
+                          <p style="padding:10px;">Functional Testing for any type of SDLC models. Mobile Testing (Functional + Performance), Cross browser testing, Device Testing, Omni-Channel testing and IoT testing. Manual functional testing and automated functional testing; Technical functional testing such as web service, API and database testing.
+                            </p>
+    
+                  </div>
+                  </div>
+                
+                  <div class="parent right" onclick="">
+                      <div class="child">
+  
+                          <h1 style="padding-top:50px; color: orangered; font-size: 25px; padding-bottom:10px;">Non-Functional Testing</h1>
+                          <p style="padding:10px;">End to End Quality Strategies, Test Maturity Assessments, Test Optimization, TCoE setup and General Test Management. Performance testing & engineering in methodologies such as SDLC and Agile. Expertise in various performance testing tools;  Coordination of User Acceptance Testing</p>
+    
+                  </div>
+                  </div>
+      
+            </div>
+    
+          </div>
+        </div>
+      
+  
+    </section> <!-- cd-timeline -->
 
-<!--==========================
-    Newsletter Section
+  <!-- Page Content -->
+  <div>
+
+         <!--==========================
+  Tools Section
   ============================-->
   <section id="newsletter" class="newsletter text-center wow fadeInUp">
       <div class="overlay padd-section">
         <div class="container">
   
           <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-8">
+            <div class="col-md-12 col-lg-12">
+                <div class="container">
+                    <div class="tools text-center">
+              
+                      <h2>some tools we use...</h2>
+              
+                    </div>
+
+                <div class="container">
+                    <div class="row" style="padding-top: 50px; ">
+              
+                      <div class="col-md-6 col-lg-3">
+                        <div class="feature-block">
+                          <img src="vendor/img/dev/bs.svg" alt="img" class="partner_logo" >
+                        </div>
+                      </div>
+              
+                      <div class="col-md-6 col-lg-3">
+                        <div class="feature-block">
+              
+                          <img src="vendor/img/dev/app.svg" alt="img" class="partner_logo">
+
+                        </div>
+                      </div>
+              
+                      <div class="col-md-6 col-lg-3">
+                        <div class="feature-block">
+              
+                          <img src="vendor/img/dev/soap.png" alt="img" width="80px" height="80px"  >
+      
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-lg-3">
+                          <div class="feature-block">
                 
+                            <img src="vendor/img/dev/java.svg" alt="img" class="partner_logo" >
+        
+                          </div>
+                      </div>
+
+                    </div>
+                  </div>
               
   
             </div>
@@ -124,51 +230,43 @@
         </div>
       </div>
     </section>
-  
-  
 
-  
+
+   
     <!--==========================
       Footer
     ============================-->
-    <footer class="footer">
+    <footer id="contact" >
       <div class="container">
         <div class="row footer_row">
   
           <div class="col-md-12 col-lg-4">
             <div class="footer-logo">
             
-              <img src="vendor/img/logo.png" alt="logo" width="200px" style="margin-top: 20px;" >
+              <img src="vendor/img/logo.png" alt="logo" width="200px" style="margin-top: 20px; font-weight: 500;" onClick="logo_url()">
             
-              <p style="margin-top: 10px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
+              <p style="margin-top: 10px;">CestaSoft Solutions proposes a managed services model to support your requirements. With your acceptance, we transition from a resource supply model based predominantly on staﬀ augmentation to one that includes managed services.</p>
   
             </div>
           </div>
   
-  
-          <div class="col-sm-6 col-md-3 col-lg-2">
+          
+          <div class="col-md-12 col-lg-4">
             <div class="list-menu">
-  
-              <ul >
-                <li> <a href="#" style="padding-top: 30px;">Home</a> </li>
-                <li> <a href="#" style="padding-top: 70px;">About</a> </li>
-                <li> <a href="#" style="padding-top: 120px;">Contact Us</a> </li>
-              </ul>
-  
-            </div>
-          </div>
-
-          
-          <div class="col-sm-6 col-md-3 col-lg-2">
-            <div class="list-menu">
-  
-          
-  
+                  <p style="padding-top: 30px; font-size: 20px; margin-bottom: 0px;">  <i class="fa fa-phone-square"  style=" color:rgb(255, 69, 0, 0.8);"> </i> + 27 (0) 11 575 1765</p>
+                  <p style="font-size: 20px; margin-bottom: 0px;">  <i class="fa  fa-map-marker " style=" color:rgb(255, 69, 0, 0.8);"></i>  Address  
+                    <Address>Ground Floor,
+                      Wrigley Field Building,
+                      The Campus,
+                      Sloane Street, Bryanston
+                      Johannesburg 2194
+                    </Address></p>
+                 
             </div>
           </div>
   
           
-          <div class="col-sm-6 col-md-3 col-lg-2">
+          <div class="col-md-12 col-lg-4">
               <h4 style="padding-bottom:10px; padding-top: 15px;">Let's Chat!</h4>
               <form>
                   <fieldset class="form-group">
@@ -178,33 +276,32 @@
                       <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
                   </fieldset>
                   <fieldset class="form-group text-xs-right">
-                      <button type="submit" class="btn btn-warning btn-md">Send</button>
+                      <button type="submit" class="btn btn-md">Send</button>
                   </fieldset>
               </form>
           </div>
-      
-  
-       
-  
         </div>
       </div>
-
-  
     </footer>
-  
-
-  
   
 
 
   <!-- JavaScript Libraries -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="vendor/lib/jquery/jquery-migrate.min.js"></script>
   <script src="vendor/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Template Main Javascript File -->
+ <script src="vendor/js/main.js"></script>
+
+ <script>
+    $(window).load(function() {
+    $('.preloader').fadeOut('slow');
+ });
+  
+  
+  </script>
  
 
-  <!-- Template Main Javascript File -->
-  <script src="vendor/js/main.js"></script>
+ 
   <script>
       $(document).ready(function() {
   $(document).delegate('.open', 'click', function(event){

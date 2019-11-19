@@ -9,15 +9,19 @@
   <meta name="author" content="">
 
   <title>Cesatsoft</title>
+
+
 <!-- Bootstrap core CSS -->
 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
+ 
 
 <link href="vendor/css/style.scss" rel="stylesheet">
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
 
   <!-- Favicons -->
@@ -27,88 +31,141 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
 
-
   <!-- Libraries CSS Files -->
   <link href="vendor/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="vendor/lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
   <link href="vendor/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="vendor/lib/animate/animate.min.css" rel="stylesheet">
   <link href="vendor/lib/modal-video/css/modal-video.min.css" rel="stylesheet">
-
   <script src="vendor/lib/jquery/jquery.min.js"></script>
   <script src="vendor/lib/wow/wow.min.js"></script>
-
- 
+  <script src="vendor/jquery/jquery.lettering.js"></script>
+  <script src="vendor/jquery/jquery.textillate.js"></script>
 
 
 
 </head>
 
 <body style="padding-top: 0px;">
+    <div class="preloader"></div>
 
-  <div style="height: 4vh;" id="top_liner">
+<script>
+ function logo_url(){
+          location.replace('index.html');
+        }
+function fb(){
+  window.open("https://www.facebook.com/cestasoft/", "_blank"); 
+}
+
+function twit(){
+  window.open("https://twitter.com/CestaSoft", "_blank"); 
+}
+
+function linkd(){
+  window.open("https://www.linkedin.com/company/cestasoft-solutions/", "_blank"); 
+}
+
+function about(){
+  location.replace('#about-us');
+}
+
+function service(){
+  location.replace('#blog');
+}
+
+function team(){
+  location.replace('#team');
+}
+
+function contact(){
+  location.replace('#contact');
+}
     
-        <div style="float: right; margin-right: 100px; padding: 5px;">
-            <span class="" style=" color:rgb(255, 255, 255); font-size: 16px; padding-right: 20px;"> info@cestasoft.co.za </span>
-            <i class="fa fa-facebook " style="  color:rgb(255, 68, 0); font-size: 16px;"></i>        
-            <i class="fa fa-linkedin" style="color:rgb(255, 68, 0); font-size: 16px; padding-left: 30px;" ></i>
-            <i class="fa fa-twitter" style="color:rgb(255, 68, 0); font-size: 16px; padding-left: 30px;" ></i>
+
+</script>
+
+  <div style="height: 6vh; position: absolute; float: right; margin-left: 800px; padding: 5px;" id="top_liner">
+    
+        <div >
+          <span class="" style=" color:rgba(255, 255, 255, 0.9); font-size: 13px; padding-right: 20px;">reach us@:  + 27 (0) 11 575 1765 </span>
+            <span class="" style=" color:rgba(255, 255, 255, 0.9); font-size: 13px; padding-right: 20px;">email: info@cestasoft.co.za  </span>
+            <i class="fa fa-facebook " style="  color:rgb(255, 68, 0); font-size: 13px;" onClick="fb()" ></i>        
+            <i class="fa fa-linkedin" style="color:rgb(255, 68, 0); font-size: 13px; padding-left: 30px;" onClick="linkd()"></i>
+            <i class="fa fa-twitter" style="color:rgb(255, 68, 0); font-size: 13px; padding-left: 30px;" onClick="twit()" ></i>
         </div>
       
     
   </div>
 
-  <!-- Header -->
-  <header id="head"  >
+  
 
-      <script>
-          function logo_url(){
-            location.replace('index.html');
-          }
-      </script>
+  <!-- banner -->
+  <div id="head"  >
 
-      <!-- Header 
+      
+
+    
+        <div  class="overlay">
+            <!-- banner
       <video class="overlay "playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" >
           <source src="video.mp4" type="video/mp4">
-      </video>
-       -->
-        <div  class="overlay">
-          
+      </video>    -->  
 
         <img src="vendor/img/logo.png" alt="logo" width="200px"  onClick="logo_url()">
+        <p style="padding-left: 140px; font-size: 10px; margin-top: -17.5px ; color: rgba(228, 96, 48, 0.904); font-weight: 600;"> EXPERIENCE INNOVATION </p>
  
               
         <div class="open " style="margin-top:20px;" > 
-          <span class="cls"></span> 
-          <span>
+          <span></span> 
+          <span >
               <div class="Menu sub-menu ">
-                  <ul class="Menu-list" data-offset="10">
-                    <li class="Menu-list-item" >
+                  <ul>
+                    <li style="margin-top: 140px;" onClick="logo_url()" >
                       Home</li>
-                    <li>
+                    <li onClick="about()">
                       About</li>
-                    <li >
-                      Work</li>
-                    <li >
-                      Contact</li>
+                    <li onClick="service()">
+                      Services</li>
+                      <li onClick="team()">
+                        Our Team</li>
+                    <li onClick="contact()" >
+                      Contact Us</li>
                   </ul>
                 </div>
           </span> 
-          <span class="cls"></span> 
+          <span ></span>  <!--class="cls"-->
       </div>
 
-            <div id="text_slide">
-                <h1 class="item-1" style="margin-top: 140px;">Innovative IT Services & Solutions!</h1>
+     <!-- <div class="slide-title tlt">
+                  
+                    <ul class="texts hidden">
+					 <li data-out-effect="fadeOut" data-out-shuffle="true"> </li>
+                      <li data-in-effect="fadeIn">Technology partner in building software solutions</li>
+                      <li data-in-effect="fadeIn">Leadership structures in quality assurance</li>
+                        <li data-in-effect="fadeIn" data-out-shuffle="true">Grow Your Business by enhancing technical skills through trainings</li>
+                      <li data-in-effect="fadeIn">Higher efficiency, lower emissions with CI/CD process</li>
+                    </ul>
+                  </div> -->
 
-                <h1 class="item-2" style="margin-top: 0px;"> Highly skilled and experienced Consultants</h1>
-                
-                <h3 class="item-3" style="margin-top: -20px;">Custom web and mobile app development </h3>
+
+                  <div class="typewriter" style="padding-left: 50px; font-weight: 600; color: #fff;margin-top: 120px;">
+                    <h1  style="margin-left: 100px; font-size: 22px; margin-right: 200px;">Leadership structures in quality assurance</h1>
+                  </div>
+
+                <h1  style="padding-left: 150px; font-weight: 600; color: #fff; font-size: 75px; ">REINVENT <span style="color: orangered;"> IT</span> </h1>
+                <p style="
+                padding-left: 150px;
+                padding-right: 700px;
+                color:#fff;
+                font-size: 0.9rem;
+                font-weight: 600;
+                letter-spacing: 1px;">Our Software Services has been engaged in custom applications, system integrations and mobility. We provide services in Business Analysis, QA (Manual & Automated) and Applications Development & Support based on Microsoft .NET Platform, Java and PHP and Dev Ops to large/medium enterprise clients.</p>
             </div>
 
-        </div>
+   
     
 
-  </header>
+      </div>
 
   <!-- Page Content -->
   <div class="container ">
@@ -125,7 +182,7 @@
             <div class="feature-block">
               <img src="vendor/img/svg/paint-palette.svg" alt="img" class="img-fluid">
               <h4 style="font-size:16px;">creative design</h4>
-              <p>Our Creative team focuses on understanding our clients and their brands to the core, and then applies this knowledge to each project, ensuring that the right message is communicated to the right target audience.</p>
+              <p >Our Creative team focuses on understanding our clients and their brands to the core, and then applies this knowledge to each project, ensuring that the right message is communicated to the right target audience.</p>
             </div>
           </div>
   
@@ -170,8 +227,8 @@
     <!--==========================
     About Us Section
   ============================-->
-  <section id="about-us" class="about-us padd-section wow fadeInUp sect">
-      <div class="section-title " style="margin-bottom: 10px;margin-top: 0px;" >
+  <section id="about-us" class="about-us padd-section wow fadeInUp sect"  style="margin-bottom: 70px;margin-top: 0px;"  >
+      <div class="section-title">
           <h2 style="text-align: center;">About Us </h2>
         </div>
       <div class="container">
@@ -210,11 +267,13 @@
       </div>
     </section>
   </div>
+
+<!-- SERVICES-->
   
   <section id="blog" class="  padd-section wow fadeInUp">
 
       <div class="container">
-        <div class="section-title text-center">
+        <div class="section-title text-center bounce-top">
   
           <h2>Our Services</h2>
           
@@ -230,10 +289,10 @@
                   <div class="child bg-one">
                       <div id="service_block">
                           <!--<i class="fa fa-eye text_fade"></i> --> 
-                          <h3 class="text_fade">Professionals Consultancy</h3>
+                          <h3 class="text_fade">IT Consultancy</h3>
    
                       </div>
-                      <a style=" margin-top: 100px;"  id="service_link" href="services.html">
+                      <a style=" margin-top: 100px;"  id="service_link" href="consulting.html">
                         <p>Domain and testing expertise with CoE</p>
                         <p>Expertise in end to end software development life cycle</p>
                         <p>Architecture and CI/CD Implementation</p>
@@ -249,7 +308,7 @@
                           <h3 class="text_fade">Quality Assurance</h3>
    
                       </div>
-                      <a  id="service_link" href="services.html">
+                      <a  id="service_link" href="testing.html">
                           <p>Performance testing (AGILE & SDLC)</p>
                           <p>Cross browser, Device, Omni-Channel and IoT Testing</p>
                           <p>Manual and automated functional testing </p>
@@ -262,10 +321,10 @@
                   <div class="child bg-three">
                       <div id="service_block">
                           <!--<i class="fa fa-eye text_fade"></i> --> 
-                          <h3 class="text_fade">Software Product Design</h3>
+                          <h3 class="text_fade">Software Engineering</h3>
    
                       </div>
-                      <a  id="service_link" href="services.html">
+                      <a  id="service_link" href="softwaredev.html">
                           <p>Native and Hybrid App Development</p>
                           <p>SAAS Products Design</p>
                           <p>Web Application Support & Maintenance</p>
@@ -282,7 +341,7 @@
                         <h3 class="text_fade">Leadership & Training</h3>
  
                     </div>
-                    <a  id="service_link" href="services.html">
+                    <a  id="service_link" href="training.html">
                         <p>Graduate Training</p>
                         <p>Software Testing Training</p>
                         <p>Scrum Implementation and Team Coaching Training</p>
@@ -310,7 +369,7 @@
 
           <section id="testimonials" class="padd-section text-center wow fadeInUp">
               <div class="container">
-                  <div class="section-title text-center">
+                  <div class="section-title text-center bounce-top">
               
                       <h2 style="padding-top: 30px;">Client Feedback </h2>
               
@@ -388,7 +447,7 @@
   <section id="team" class="padd-section text-center wow fadeInUp">
 
       <div class="container">
-        <div class="section-title text-center">
+        <div class="section-title text-center bounce-top">
   
           <h2>Meet the Team</h2>
   
@@ -473,7 +532,7 @@
           <div class="row justify-content-center">
             <div class="col-md-12 col-lg-12">
                 <div class="container">
-                    <div class="section-title text-center">
+                    <div class="section-title text-center bounce-top">
               
                       <h2>Our Patners </h2>
               
@@ -524,17 +583,19 @@
       </div>
     </section>
   
+
+  
     <!--==========================
       Footer
     ============================-->
-    <footer >
+    <footer id="contact" >
       <div class="container">
         <div class="row footer_row">
   
           <div class="col-md-12 col-lg-4">
             <div class="footer-logo">
             
-              <img src="vendor/img/logo.png" alt="logo" width="200px" style="margin-top: 20px; font-weight: 500;" >
+              <img src="vendor/img/logo.png" alt="logo" width="200px" style="margin-top: 20px; font-weight: 500;" onClick="logo_url()">
             
               <p style="margin-top: 10px;">CestaSoft Solutions proposes a managed services model to support your requirements. With your acceptance, we transition from a resource supply model based predominantly on staﬀ augmentation to one that includes managed services.</p>
   
@@ -571,28 +632,28 @@
                   </fieldset>
               </form>
           </div>
-      
-  
-       
-  
         </div>
       </div>
-
-  
     </footer>
-  
-
-  
   
 
 
   <!-- JavaScript Libraries -->
   <script src="vendor/lib/jquery/jquery-migrate.min.js"></script>
   <script src="vendor/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Template Main Javascript File -->
+ <script src="vendor/js/main.js"></script>
+
+ <script>
+   $(window).load(function() {
+   $('.preloader').fadeOut('slow');
+});
+ 
+ 
+ </script>
  
 
-  <!-- Template Main Javascript File -->
-  <script src="vendor/js/main.js"></script>
+ 
   <script>
       $(document).ready(function() {
   $(document).delegate('.open', 'click', function(event){
@@ -609,6 +670,23 @@
 });
   
   </script>
+ 
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5dd3b59b43be710e1d1e0197/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+
 </body>
 
 </html>

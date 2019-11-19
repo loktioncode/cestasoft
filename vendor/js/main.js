@@ -75,61 +75,6 @@ jQuery(document).ready(function( $ ) {
     $("#mobile-nav, #mobile-nav-toggle").hide();
   }
 
-  // Smooth scroll for the menu and links with .scrollto classes
-  $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      if (target.length) {
-        var top_space = 0;
-
-        if ($('#header').length) {
-          top_space = $('#header').outerHeight();
-
-          if( ! $('#header').hasClass('header-fixed') ) {
-            top_space = top_space - 20;
-          }
-        }
-
-        $('html, body').animate({
-          scrollTop: target.offset().top - top_space
-        }, 1500, 'easeInOutExpo');
-
-        if ($(this).parents('.nav-menu').length) {
-          $('.nav-menu .menu-active').removeClass('menu-active');
-          $(this).closest('li').addClass('menu-active');
-        }
-
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
-          $('#mobile-body-overly').fadeOut();
-        }
-        return false;
-      }
-    }
-  });
-
-  // Modal video
-  new ModalVideo('.js-modal-btn', {channel: 'youtube'});
-
-  // Init Owl Carousel
-  $('.carousel').owlCarousel({
-    items: 4,
-    autoplay: true,
-    loop: true,
-    margin: 30,
-    dots: true,
-    responsiveClass: true,
-    responsive: {
-
-      320: { items: 1},
-      480: { items: 2},
-      600: { items: 2},
-      767: { items: 3},
-      768: { items: 3},
-      992: { items: 4}
-    }
-  });
 
 // custom code
 
@@ -263,36 +208,6 @@ anime.timeline({loop: })
                   });
               });
 
-
-              var $menu = $('.Menu-list'),
-              $item = $('.Menu-list-item'),
-              w = $(window).width(), //window width
-              h = $(window).height(); //window height
-          
-          $(window).on('mousemove', function(e) {
-            var offsetX = 0.5 - e.pageX / w, //cursor position X
-                offsetY = 0.5 - e.pageY / h, //cursor position Y
-                dy = e.pageY - h / 2, //@h/2 = center of poster
-                dx = e.pageX - w / 2, //@w/2 = center of poster
-                theta = Math.atan2(dy, dx), //angle between cursor and center of poster in RAD
-                angle = theta * 180 / Math.PI - 90, //convert rad in degrees
-                offsetPoster = $menu.data('offset'),
-                transformPoster = 'translate3d(0, ' + -offsetX * offsetPoster + 'px, 0) rotateX(' + (-offsetY * offsetPoster) + 'deg) rotateY(' + (offsetX * (offsetPoster * 2)) + 'deg)'; //poster transform
-          
-            //get angle between 0-360
-            if (angle < 0) {
-              angle = angle + 360;
-            }
-          
-            //poster transform
-            $menu.css('transform', transformPoster);
-          
-            //parallax for each layer
-            $item.each(function() {
-              var $this = $(this),
-                  offsetLayer = $this.data('offset') || 0,
-                  transformLayer = 'translate3d(' + offsetX * offsetLayer + 'px, ' + offsetY * offsetLayer + 'px, 20px)';
-          
-              $this.css('transform', transformLayer);
-            });
-          });
+              function logo_url(){
+                location.replace('index.html');
+              }
