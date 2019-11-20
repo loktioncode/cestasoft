@@ -71,6 +71,11 @@ function linkd(){
   window.open("https://www.linkedin.com/company/cestasoft-solutions/", "_blank"); 
 }
 
+
+function chat(){
+  window.open('https://tawk.to/chat/5dd3b59b43be710e1d1e0197/default','popUpWindow','height=500,width=400,left=1200,top=300,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');
+}
+
 function about(){
   location.replace('#about-us');
 }
@@ -100,22 +105,20 @@ function contact(){
         <img src="vendor/img/logo.png" alt="logo" width="200px"  onClick="logo_url()" style="margin-top: 10px;" >
         <p style="padding-left: 80px; font-size: 10px; margin-top: -16.5px ; color: rgba(228, 96, 48, 0.904); font-weight: 600;"> EXPERIENCE INNOVATION </p>
         
-      <div class="open" style="margin-top: 30px;"> 
-        <span class="cls"></span> 
-        <span>
-          
-            <div class="Menu sub-menu ">
-                <ul>
-                  <li style="margin-top: 140px;" onClick="logo_url()" >
-                    Home</li>
-               
-                </ul>
-              </div>
-            
-         
-        </span> 
-        <span class="cls"></span> 
-    </div>
+        <div class="open Menu " style="margin-top:20px;" > 
+          <span></span> 
+          <span >
+              <div class="sub-menu ">
+                  <ul>
+                    <li style="margin-top: 140px;" onClick="logo_url()" >
+                      Home</li>
+                   
+                  </ul>
+                </div>
+          </span> 
+          <span ></span>  <!--class="cls"-->
+          <span ></span>
+      </div>
 
 
       <h1 class="tracking-in-contract-bck-top">
@@ -268,7 +271,7 @@ function contact(){
   
           
           <div class="col-md-12 col-lg-4">
-              <h4 style="padding-bottom:10px; padding-top: 15px;">Let's Chat!</h4>
+              <h4 style="padding-bottom:10px; padding-top: 15px;">Email Us</h4>
               <form>
                   <fieldset class="form-group">
                       <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
@@ -284,6 +287,12 @@ function contact(){
         </div>
       </div>
     </footer>
+
+    <div class="chat" onClick="chat()">
+      <h4 style="padding-bottom:10px; padding-top: 15px;">Let's Chat!</h4>
+      <span class="dot"><i class="fa fa-envelope" aria-hidden="true" style=" color:#fff; font-size: 30px; padding-left: 22px; padding-top: 25px;"></i>
+      </span>
+  </div>
   
 
 

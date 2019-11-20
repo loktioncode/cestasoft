@@ -42,12 +42,15 @@
   <script src="vendor/jquery/jquery.lettering.js"></script>
   <script src="vendor/jquery/jquery.textillate.js"></script>
 
-
+  <style>
+ 
+      </style>
 
 </head>
 
 <body style="padding-top: 0px;">
-    <div class="preloader"></div>
+<div class="preloader"></div>
+
 
 <script>
  function logo_url(){
@@ -55,6 +58,10 @@
         }
 function fb(){
   window.open("https://www.facebook.com/cestasoft/", "_blank"); 
+}
+
+function chat(){
+  window.open('https://tawk.to/chat/5dd3b59b43be710e1d1e0197/default','popUpWindow','height=500,width=400,left=1200,top=300,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');
 }
 
 function twit(){
@@ -84,7 +91,7 @@ function contact(){
 
 </script>
 
-  <div style="height: 6vh; position: absolute; float: right; margin-left: 800px; padding: 5px;" id="top_liner">
+  <div class="col-lg-8" style="height: 6vh; position: absolute; float: right; margin-left: 800px; padding: 5px;" id="top_liner">
     
         <div >
           <span class="" style=" color:rgba(255, 255, 255, 0.9); font-size: 13px; padding-right: 20px;">reach us@:  + 27 (0) 11 575 1765 </span>
@@ -179,7 +186,7 @@ function contact(){
       <div class="container">
         <div class="row">
   
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3" >
             <div class="feature-block">
               <img src="vendor/img/svg/paint-palette.svg" alt="img" class="img-fluid">
               <h4 style="font-size:16px;">creative design</h4>
@@ -685,25 +692,33 @@ function contact(){
                  
             </div>
           </div>
-  
-          
+
           <div class="col-md-12 col-lg-4">
-              <h4 style="padding-bottom:10px; padding-top: 15px;">Let's Chat!</h4>
-              <form>
-                  <fieldset class="form-group">
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                  </fieldset>
-                  <fieldset class="form-group">
-                      <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
-                  </fieldset>
-                  <fieldset class="form-group text-xs-right">
-                      <button type="submit" class="btn btn-md">Send</button>
-                  </fieldset>
-              </form>
-          </div>
+            <h4 style="padding-bottom:10px; padding-top: 15px;">Contact Us</h4>
+            <form>
+                <fieldset class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                </fieldset>
+                <fieldset class="form-group">
+                    <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+                </fieldset>
+                <fieldset class="form-group text-xs-right">
+                    <button type="submit" class="btn btn-md">Send</button>
+                </fieldset>
+            </form>
+        </div>
+
         </div>
       </div>
+
+
     </footer>
+
+    <div class="chat" onClick="chat()">
+      <h4 style="padding-bottom:8px;">Let's Chat!</h4>
+      <span class="dot"><i class="fa fa-envelope" aria-hidden="true" style=" color:#fff; font-size: 30px; padding-left: 22px; padding-top: 25px;"></i>
+      </span>
+  </div>
   
 
 
@@ -713,14 +728,14 @@ function contact(){
   <!-- Template Main Javascript File -->
  <script src="vendor/js/main.js"></script>
 
+
  <script>
-   $(window).load(function() {
-   $('.preloader').fadeOut('slow');
+  $(window).load(function() {
+  $('.preloader').fadeOut('slow');
 });
- 
- 
- </script>
- 
+
+
+</script>
 
  
   <script>
@@ -739,19 +754,7 @@ function contact(){
 });
   </script>
  
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/5dd3b59b43be710e1d1e0197/default';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-</script>
-<!--End of Tawk.to Script-->
+
 
 
 </body>

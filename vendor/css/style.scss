@@ -1634,3 +1634,21 @@ border-right: 7px solid #fff;
 }
 
 
+.chat{
+  position: fixed;
+  top: 80%;
+  left: 90%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.dot {
+  height: 80px;
+  width: 80px;
+  background-color: rgb(212, 70, 19, 0.8);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
