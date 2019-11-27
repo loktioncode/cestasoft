@@ -358,7 +358,7 @@ padding-top: 20px;
 
 .section-title h2 {
   font-family: ArchitectsDaughter, sans-serif;
-  font-size: 45px;
+  font-size: 36px;
   font-weight: 300;
   letter-spacing: 2px;
   margin-bottom: 20px;
@@ -963,7 +963,12 @@ footer {
 address{
   padding-top: 0px;
   margin: 0;
-  color:rgb(226, 186, 162, 0.8) ;
+  color: #fff;
+}
+
+#top_liner{
+  display: flexbox;
+  
 }
 
 
